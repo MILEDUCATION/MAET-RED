@@ -48,7 +48,8 @@
             padding-bottom: 15px;
         }
 
-        .nav-btn {
+        /* Clase compartida para botones de sección y enlaces externos del menú */
+        .nav-btn, .nav-link-btn {
             background: none;
             border: none;
             color: #bdc3c7;
@@ -61,9 +62,11 @@
             margin-bottom: 8px;
             transition: all 0.3s ease;
             width: 100%;
+            display: block;
+            text-decoration: none; /* Asegura que el enlace no se subraye en el menú */
         }
 
-        .nav-btn:hover {
+        .nav-btn:hover, .nav-link-btn:hover {
             background-color: #34495e;
             color: #ffffff;
             padding-left: 25px;
@@ -190,6 +193,9 @@
         <button class="nav-btn" onclick="openTab(event, 'casos')">🚀 5. Casos Prácticos</button>
         <button class="nav-btn" onclick="openTab(event, 'conclusiones')">💡 6. Conclusiones</button>
         <button class="nav-btn" onclick="openTab(event, 'referencias')">📚 7. Referencias</button>
+        
+        <!-- ENLACE EXTERNO MODIFICADO -->
+        <a class="nav-link-btn" href="https://view.genially.com/6a2b5725376f577c03e12d64" target="_blank">✨ Primer diseño</a>
     </div>
 
     <!-- ÁREA DE CONTENIDO DERECHO -->
@@ -231,7 +237,7 @@
 
             <h3>💻 Dimensión Tecnológica (Técnica)[cite: 1]</h3>
             <ul>
-                <li><strong>4. Formato y Diseño Visual:</strong> <span class="badge-tecnologica">Tecnológico</span> Interfaz estética, colorida, ordenada y coherente con la psicología infantil de primaria[cite: 1].</li>
+                <li><strong>4. Formato y Diseño Visual:</strong> <span class="badge-tecnologica">Tecnológico</span> Interfaz estética, colorida, ordenada y coherentemente con la psicología infantil de primaria[cite: 1].</li>
                 <li><strong>5. Usabilidad y Navegabilidad:</strong> <span class="badge-tecnologica">Tecnológico</span> Entorno intuitivo que permite al alumno navegar por sí mismo sin instrucciones complejas[cite: 1].</li>
                 <li><strong>6. Accesibilidad y Reusabilidad:</strong> <span class="badge-tecnologica">Tecnológico</span> Funcionamiento óptimo en PC, tabletas o celulares, y flexibilidad para adaptarse a otros temas[cite: 1].</li>
             </ul>
@@ -255,12 +261,12 @@
 
         <!-- CONTENIDO 5: CASOS PRÁCTICOS -->
         <div id="casos" class="tab-content">
-            <h1>Implementación y Validation en el Aula</h1>
+            <h1>Implementación y Validación en el Aula</h1>
             <p class="subtitle">Evaluación empírica de dos recursos digitales para el área de Inglés (Grado Cuarto)[cite: 1]</p>
             
             <div class="card-recurso">
                 <h3>🎮 Recurso 1: Juego de los "Colores" (Educaplay)[cite: 1]</h3>
-                <p><strong>Puntuación Obtenida:</strong> 28 / 30 puntos — <strong>Nivel de Calidad: Excelente</strong>[cite: 1]</p>
+                <p><strong>Puntuación Obtenía:</strong> 28 / 30 puntos — <strong>Nivel de Calidad: Excelente</strong>[cite: 1]</p>
                 <p><strong>Propuesta de Mejora:</strong> Integrar secciones de pronunciación nativa en audio y empaquetar en formato SCORM para posibilitar su uso offline[cite: 1].</p>
                 <p><strong>Enlace al recurso:</strong> <a class="resource-link" href="https://es.educaplay.com/recursos-educativos/28445574-colores_en_ingles.html" target="_blank">🔗 https://es.educaplay.com/recursos-educativos/28445574-colores_en_ingles.html[cite: 1]</a></p>
             </div>
